@@ -1,0 +1,61 @@
+.task-list {
+  padding: 10px;
+  margin: 0;
+}
+
+.pinned-task-list {
+  padding: 10px;
+  margin: 0;
+}
+
+.task {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-bottom: none;
+  border-radius: 15px;
+  list-style: none;
+  padding-right: 60px;
+}
+
+.task:last-child {
+  border-bottom: 1px solid #000000;
+}
+
+.task-checkbox {
+  position: absolute;
+  right: 10px;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  box-sizing: border-box;
+  right: 10px;
+  width: 24px;
+  height: 21px;
+  vertical-align: middle;
+  border: 1px solid #696969;
+  border-radius: 50%;
+}
+
+.task-checkbox:checked+.custom-checkbox::before {
+  content: "V";
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #696969;
+}
+
+.no-tasks-message,
+.no-pin-tasks-message {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
