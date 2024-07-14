@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Top Tasks - the application is a task manager",
   "main": "index.js",
+  "author": "dmiweb",
+  "license": "GNU GPL",
+    "repository": "https://github.com/dmiweb/top-tasks.git",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
@@ -14,8 +17,6 @@
     "preshow:dist": "npm run build",
     "show:dist": "http-server dist"
   },
-  "author": "dmiweb",
-  "license": "GNU GPL",
   "devDependencies": {
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.4",
@@ -39,6 +40,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
-  },
-  "repository": "https://github.com/dmiweb/top-tasks.git"
+  }
 }
